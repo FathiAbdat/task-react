@@ -1,0 +1,151 @@
+.popularStays {
+  padding: 4rem 5rem;
+  background-color: #ffffff;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.header h2 {
+  font-size: 1.8rem;
+  color: #1262AE;
+  font-weight: 600;
+}
+
+.viewAll {
+  color: #1262AE;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.card {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+  background: white;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.imageContainer {
+  position: relative;
+}
+
+.imageContainer img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.cardContent {
+  padding: 1rem;
+}
+
+.stayType {
+  font-size: 0.85rem;
+  color: #718096;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.75rem;
+}
+
+.cardContent h3 {
+  font-size: 1.1rem;
+  color: #1A1A1A;
+  margin-bottom: 0.5rem;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+}
+
+.amount {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #1262AE;
+}
+
+.perNight {
+  font-size: 0.9rem;
+  color: #718096;
+  margin-left: 6px;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  margin: 0.5rem 0;
+}
+
+.stars {
+  color: #f1c40f;
+  margin-right: 10px;
+}
+
+.reviews {
+  font-size: 0.9rem;
+  color: #718096;
+}
+
+.moreDetails {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #1262AE;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.moreDetails:hover {
+  background-color: #0D4F8B;
+}
+
+@media (max-width: 1200px) {
+  .popularStays {
+    padding: 3rem 4rem;
+  }
+  
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .popularStays {
+    padding: 2rem;
+  }
+  
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .header {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+}

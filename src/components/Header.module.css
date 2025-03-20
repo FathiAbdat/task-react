@@ -1,0 +1,144 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 5rem;
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logoText {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #1262AE;
+  cursor: pointer;
+  letter-spacing: -0.5px;
+}
+
+.nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 3rem;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #424242;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+  padding: 0.5rem 0;
+}
+
+.nav a:hover {
+  color: #1262AE;
+}
+
+.userSection {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.notificationBtn,
+.profileBtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  transition: transform 0.2s ease;
+}
+
+.notificationBtn:hover,
+.profileBtn:hover {
+  transform: scale(1.1);
+}
+
+.notificationBtn img,
+.profileBtn img {
+  width: 28px;
+  height: 28px;
+  object-fit: cover;
+}
+
+.profileBtn img {
+  border-radius: 50%;
+}
+
+
+.profileBtn img {
+  width: 24px;
+  height: 24px;
+}
+
+.menuToggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.menuToggle span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background-color: #1262AE;
+  margin: 4px 0;
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 1rem 2rem;
+  }
+
+  .menuToggle {
+    display: block;
+  }
+
+  .nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 70%;
+    height: 100vh;
+    background-color: #ffffff;
+    padding: 2rem;
+    transition: right 0.3s ease;
+    box-shadow: -2px 0 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav.active {
+    right: 0;
+  }
+
+  .nav ul {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .nav a {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    padding: 1rem;
+  }
+
+  .logoText {
+    font-size: 1.2rem;
+  }
+}

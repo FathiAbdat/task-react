@@ -1,0 +1,176 @@
+.hero {
+  position: relative;
+  height: 600px;
+  background-image: url('../assets/Banner  Background.png');
+  background-color:#1262AE;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #ffffff;
+}
+
+.content {
+  z-index: 2;
+  max-width: 1200px;
+  padding: 0 2rem;
+}
+
+.content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.content p {
+  font-size: 1.25rem;
+  margin-bottom: 3rem;
+  opacity: 0.9;
+}
+
+.searchContainer {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  padding: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.searchBox {
+  width: 100%;
+}
+
+.searchHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.searchHeader label {
+  text-align: left;
+  color: #1262AE;
+  font-weight: 600;
+}
+
+.flightType {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.flightType label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #1262AE;
+  font-weight: normal;
+  margin: 0;
+  cursor: pointer;
+}
+
+.flightType input[type="radio"] {
+  margin: 0;
+  cursor: pointer;
+}
+
+.inputs {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.inputGroup {
+  display: flex;
+  gap: 1rem;
+  flex: 1;
+}
+
+.inputGroup input {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+.searchButton {
+  padding: 0.75rem 2rem;
+  background-color: #FF9B53;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.searchButton:hover {
+  background-color: #ff8c3a;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+
+@media (max-width: 768px) {
+  .hero {
+    height: auto;
+    min-height: 500px;
+    padding: 2rem 0;
+  }
+
+  .content h1 {
+    font-size: 2rem;
+  }
+
+  .content p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .searchContainer {
+    padding: 1rem;
+  }
+
+  .searchHeader {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .inputs {
+    flex-direction: column;
+  }
+
+  .inputGroup {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .searchButton {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    min-height: 400px;
+  }
+
+  .content h1 {
+    font-size: 1.5rem;
+  }
+
+  .flightType {
+    gap: 1rem;
+  }
+}

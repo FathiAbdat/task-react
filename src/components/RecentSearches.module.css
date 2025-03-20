@@ -1,0 +1,159 @@
+.recentSearches {
+  padding: 2rem 5rem;
+  background-color: #ffffff;
+}
+
+.recentSearches h2 {
+  color: #1262AE;
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.searchCards {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.searchCard {
+  flex: 1;
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.route {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.airport {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1262AE;
+  margin-left: 15rem;
+}
+
+.airport1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1262AE;
+  margin-right: 15rem;
+}
+
+.flightIcon {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.dot {
+  width: 6px;
+  height: 6px;
+  background-color: #1262AE;
+  border-radius: 50%;
+}
+
+.plane {
+  color: #1262AE;
+  display: inline-block;
+}
+
+.departDate {
+  text-align: center;
+  color: #666;
+  font-size: 0.9rem;
+}
+.departDate span{
+  font-weight: bold;
+  color: black;
+}
+
+.prepareSection {
+  margin-top: 2rem;
+}
+
+.prepareSection h3 {
+  color: #1262AE;
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.prepareButtons {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: space-between;
+}
+
+.prepareButton {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem;
+  border-radius: 8px;
+  background: #f5f5f5;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  flex: 1;
+}
+
+.prepareButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.icon {
+  font-size: 1.5rem;
+}
+
+.prepareButton span:last-child {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+
+@media (max-width: 768px) {
+  .recentSearches {
+    padding: 2rem;
+  }
+
+  .searchCards {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .prepareButtons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+
+  .prepareButton {
+    padding: 0.75rem;
+  }
+
+  .icon {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .recentSearches {
+    padding: 1.5rem;
+  }
+
+  .prepareButtons {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .airport {
+    font-size: 1.25rem;
+  }
+}
